@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kontakt</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css"> 
+        <script src="https://kit.fontawesome.com/52152da35c.js" crossorigin="anonymous"></script>
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+        <div class="box-kont">
+            <img src="E:\Dejana\Slike\weeb\profile-4.jpg" alt="" class="box-img">
+            <h1>Pošalji poruku</h1>
+            <div id="error"></div>
+            <form id="form" action="/" method="GET"></form>
+            <div>
+                <label for="ime">Ime i prezime</label>
+                <input id="ime" name="ime" type="text">
+            </div>
+            <div>
+                <label for="password">Lozinka</label>
+                <input id="password" name="password" type="password">
+            </div>
+            <div>
+                <label for="email">e-mail</label>
+                <input id="email" name="email" type="text">
+            </div>
+            <div>
+                <label for="poruka">Poruka</label>
+                <input id="poruka" name="poruka" type="text">
+            </div>
+            <button type="submit" onclick="provjera()">Pošalji poruku</button>
+            </form>
+        </div>
+    </body>
+</html>
