@@ -3,13 +3,13 @@ var pojam = prompt("Unesi ime ili prezime");
 
 let student = [
     {
-        ime: 'Dejana',
-        prezime: 'Pivac',
+        ime: 'Karla',
+        prezime: 'Petrunović',
         upisan: true,
     },
     {
-        ime: 'Martina',
-        prezime: 'Rubil',
+        ime: 'Marija',
+        prezime: 'Kovačević',
         upisan: true,
     },
     {
@@ -56,13 +56,14 @@ let student = [
 
 function provjeri(lista, pojam){
     for (var i = 0; i <= lista.length; i++){
-        if(pojam == lista[i].ime || pojam == lista[i].prezime && lista[i].upisan == true){
-            return true;
+        if(pojam === lista[i].ime || pojam === lista[i].prezime && lista[i].upisan === true){
+           if(lista[i].upisan === true) {
+               return true;
         }
         else{
             return false;
         }
-       
+    }
     }
 } 
 console.log(provjeri(student, pojam));

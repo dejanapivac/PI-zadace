@@ -2,23 +2,23 @@
 let poruka;
 
 function izracun(bodovi){
-    if(bodovi<40){
-        poruka = "Pali ste!";
+    if(bodovi<40){              //ovi returnoci se koriste ako vracamo vrijednost za npr daljnje racunanje
+        poruka = "Pali ste!";   //nikako return
         return 1;
     }
-    if(bodovi>=40 && bodovi<55){
+    else if(bodovi>=40 && bodovi<55){       
         poruka = "Prolazzzz!!";
         return 2;
     }
-    if(bodovi>=55 && bodovi<70){
+    else if(bodovi>=55 && bodovi<70){
         poruka = "Trojkica!";
         return 3;
     }
-    if(bodovi>=70 && bodovi<85){
+    else if(bodovi>=70 && bodovi<85){
         poruka = "Četvorkaa good jobbb!";
         return 4;
     }
-    if(bodovi>=85 && bodovi<100){
+    else if(bodovi>=85 && bodovi<100){
         poruka = "WOWW smarttt petica!!!!";
         return 5;
     }
